@@ -56,8 +56,23 @@ pressure = st.number_input("Pressure (MPa)", 20.28, 150.0, 50.0)
 heating_rate = st.number_input("Heating Rate (°C/min)", 50.80, 600.0, 150.0)
 holding_time = st.number_input("Holding Time (min)", 5.00, 90.0, 10.0)
 particle_size = st.number_input("Particle Size (µm)", 50.29, 100.0, 75.0)
-vacancy_conc = st.number_input("Vacancy Concentration", 1.00e-05, 1.00e-02, 1.00e-04)
-diffusion_coeff = st.number_input("Diffusion Coefficient (m²/s)", 1.00e-12, 1.00e-09, 1.00e-11)
+vacancy_conc = st.number_input(
+    "Vacancy Concentration",
+    min_value=1.00e-05,
+    max_value=1.00e-02,
+    value=1.00e-04,
+    step=1.00e-05,
+    format="%.2e"
+)
+
+diffusion_coeff = st.number_input(
+    "Diffusion Coefficient (m²/s)",
+    min_value=1.00e-12,
+    max_value=1.00e-09,
+    value=1.00e-11,
+    step=1.00e-12,
+    format="%.2e"
+)
 
 if st.button("Predict"):
 
