@@ -8,16 +8,36 @@ classifier = joblib.load("classifier.pkl")
 
 st.markdown(
     """
-    <h1 style='text-align: center; color: #1f77b4;'>
+    <style>
+    .main-title {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 900;
+        background: linear-gradient(90deg, #ff0000, #ff4d4d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .sub-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #ff1a1a;
+        margin-top: 0px;
+    }
+    </style>
+
+    <div class="main-title">
         Glassy Tech
-    </h1>
-    <h4 style='text-align: corner;font-weight: bold;'>
+    </div>
+
+    <div class="sub-title">
         SPS Spinel ML Prediction System
-    </p>
+    </div>
     """,
     unsafe_allow_html=True
 )
-st.markdown("---")
 st.image("Spinel.jpeg",
          caption="AI-Based Defect Detection in Spinel Oxide Ceramics",
          use_container_width=True)
