@@ -6,8 +6,17 @@ import joblib
 regressor = joblib.load("regressor.pkl")
 classifier = joblib.load("classifier.pkl")
 
-st.title("SPS Spinel ML Prediction System")
-
+st.markdown(
+    """
+    <h1 style='text-align: center; color: #1f77b4;'>
+        Glassy Tech
+    </h1>
+    <h4 style='text-align: corner;font-weight: bold;'>
+        SPS Spinel ML Prediction System
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 st.markdown("---")
 
 st.write("Enter SPS Processing Parameters")
@@ -47,14 +56,3 @@ if st.button("Predict"):
         st.error(f"Defect Likely (Probability: {defect_prob:.2f})")
     else:
         st.success(f"No Defect (Probability: {1-defect_prob:.2f})")
-
-
-
-    st.markdown("""
-    **Team Name:** Glassy Tech  
-
-    **Team Members:**  
-    - Alphina Seles L
-    - Arjun M Rao
-    - Krishnakumar V
-    """)
