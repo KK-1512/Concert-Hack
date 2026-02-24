@@ -91,7 +91,7 @@ st.markdown("""
 <style>
 .team-box {
     background-color: rgba(0, 123, 255, 0.08);
-    padding: 20px;
+    padding: 22px;
     border-radius: 12px;
     border: 1px solid rgba(0, 123, 255, 0.2);
     margin-top: 30px;
@@ -100,21 +100,23 @@ st.markdown("""
 .team-title {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .team-members {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 2;
+    margin-left: 25px;   /* This creates space before names */
 }
 </style>
 
 <div class="team-box">
     <div class="team-title">👥 Team Members</div>
+
     <div class="team-members">
-            Alphina Seles L <br>
-            Arjun M Rao <br>
-            Krishnakumar V
+        Alphina Seles L <br>
+        Arjun M Rao <br>
+        Krishnakumar V
     </div>
 </div>
 """, unsafe_allow_html=True)
