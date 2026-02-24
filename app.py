@@ -48,7 +48,7 @@ st.image("Spinel.jpeg",
 col1, col2 = st.columns([2, 1])  # 2:1 ratio (image bigger)
 
 with col1:
-    st.image("spinel_image.png", use_container_width=True)
+    st.image("Spinel.jpeg", use_container_width=True)
 
 with col2:
     st.markdown("## 👥 Team Members")
