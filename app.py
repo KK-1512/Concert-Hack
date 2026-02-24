@@ -45,19 +45,6 @@ st.markdown("""
 st.image("Spinel.jpeg",
          caption="AI-Based Defect Detection in Spinel Oxide Ceramics",
          use_container_width=True)
-col1, col2 = st.columns([2, 1])  # 2:1 ratio (image bigger)
-
-with col1:
-    st.image("Spinel.jpeg", use_container_width=True)
-
-with col2:
-    st.markdown("## 👥 Team Members")
-    st.markdown("""
-    ### Alphina Seles L  
-    ### Arjun M Rao  
-    ### Krishnakumar V
-    """)
-
 st.markdown(
     "<h2 style='font-weight: 800;'>Enter SPS Processing Parameters</h2>",
     unsafe_allow_html=True
@@ -113,3 +100,35 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+st.markdown("""
+<style>
+.team-box {
+    background-color: rgba(0, 123, 255, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    margin-top: 30px;
+}
+
+.team-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team-members {
+    font-size: 18px;
+    line-height: 1.8;
+}
+</style>
+
+<div class="team-box">
+    <div class="team-title">👥 Team Members</div>
+    <div class="team-members">
+        Alphina Seles L <br>
+        Arjun M Rao <br>
+        Krishnakumar V
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
