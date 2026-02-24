@@ -86,7 +86,7 @@ if st.button("Predict"):
     else:
         st.success(f"No Defect (Probability: {1-defect_prob:.2f})")
 
-)
+
 st.markdown("""
 <style>
 .team-box {
