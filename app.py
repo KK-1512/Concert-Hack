@@ -15,11 +15,11 @@ st.markdown("""
     text-align: center;
     font-size: 75px;
     font-weight: 900;
-    background: linear-gradient(90deg, #ff0000, #ff4d4d, #ff1a1a);
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 4px;
-    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    text-shadow: 0 0 25px rgba(0, 150, 255, 0.8);
     margin-bottom: 10px;
 }
 
@@ -28,7 +28,7 @@ st.markdown("""
     text-align: center;
     font-size: 26px;
     font-weight: 600;
-    color: #ff3333;
+    color: #ff3333;  /* keep subtitle red if you want contrast */
     letter-spacing: 2px;
     margin-top: -10px;
 }
