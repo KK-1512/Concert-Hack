@@ -7,6 +7,16 @@ regressor = joblib.load("regressor.pkl")
 classifier = joblib.load("classifier.pkl")
 
 st.title("SPS Spinel ML Prediction System")
+st.info("""
+👥 **Team Name:** Material Mavericks  
+
+👨‍🔬 **Team Members:**  
+• Alphina Seles L
+• Arjun M Rao
+• Krishnakumar V 
+""")
+
+st.markdown("---")
 
 st.write("Enter SPS Processing Parameters")
 
