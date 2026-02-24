@@ -106,13 +106,12 @@ st.markdown("""
 .team-members {
     font-size: 18px;
     line-height: 2;
-    margin-left: 25px;   /* This creates space before names */
+    margin-left: 30px;
 }
 </style>
 
 <div class="team-box">
     <div class="team-title">👥 Team Members</div>
-
     <div class="team-members">
         Alphina Seles L <br>
         Arjun M Rao <br>
@@ -120,4 +119,3 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
-
