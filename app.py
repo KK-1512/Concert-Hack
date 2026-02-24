@@ -47,6 +47,32 @@ st.image("Spinel.jpeg",
          use_container_width=True)
 
 st.write("Enter SPS Processing Parameters")
+st.markdown("""
+<style>
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    color: #00c6ff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+}
+.section-divider {
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00c6ff, transparent);
+    margin: auto;
+    margin-bottom: 30px;
+}
+</style>
+
+<div class="section-title">
+    Enter SPS Processing Parameters
+</div>
+<div class="section-divider"></div>
+""", unsafe_allow_html=True)
 
 # User Inputs
 temperature = st.number_input("Temperature (°C)", 800.0, 2000.0, 1200.0)
