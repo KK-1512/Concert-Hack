@@ -47,6 +47,10 @@ st.image("Spinel.jpeg",
          use_container_width=True)
 
 st.write("Enter SPS Processing Parameters")
+st.markdown(
+    "<h2 style='font-weight: 800;'>Enter SPS Processing Parameters</h2>",
+    unsafe_allow_html=True
+)
 st.markdown("""
 <style>
 .section-title {
