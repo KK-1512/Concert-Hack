@@ -86,19 +86,6 @@ if st.button("Predict"):
     else:
         st.success(f"No Defect (Probability: {1-defect_prob:.2f})")
 
-st.markdown(
-    """
-    <div style='text-align: corner;'>
-        <h3>Team Members</h3>
-        <p>
-        Alphina Seles L<br>
-        Arjun M Rao <br>
-        Krishnakumar V <br>
-        </p>
-    </div>
-    <hr>
-    """,
-    unsafe_allow_html=True
 )
 st.markdown("""
 <style>
@@ -125,9 +112,9 @@ st.markdown("""
 <div class="team-box">
     <div class="team-title">👥 Team Members</div>
     <div class="team-members">
-        Alphina Seles L <br>
-        Arjun M Rao <br>
-        Krishnakumar V
+            Alphina Seles L <br>
+            Arjun M Rao <br>
+            Krishnakumar V
     </div>
 </div>
 """, unsafe_allow_html=True)
