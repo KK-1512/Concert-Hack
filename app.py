@@ -51,13 +51,13 @@ st.markdown(
 )
 
 # User Inputs
-temperature = st.number_input("Temperature (°C)", 800.0, 2000.0, 1200.0)
-pressure = st.number_input("Pressure (MPa)", 10.0, 100.0, 50.0)
-heating_rate = st.number_input("Heating Rate (°C/min)", 1.0, 100.0, 10.0)
-holding_time = st.number_input("Holding Time (min)", 1.0, 60.0, 10.0)
-particle_size = st.number_input("Particle Size (µm)", 0.1, 10.0, 2.0)
-vacancy_conc = st.number_input("Vacancy Concentration", 0.0, 1.0, 0.01)
-diffusion_coeff = st.number_input("Diffusion Coefficient", 0.0, 1.0, 0.001)
+temperature = st.number_input("Temperature (°C)", 500.0, 1750.0, 1300.0)
+pressure = st.number_input("Pressure (MPa)", 20.28, 150.0, 50.0)
+heating_rate = st.number_input("Heating Rate (°C/min)", 50.80, 600.0, 150.0)
+holding_time = st.number_input("Holding Time (min)", 5.00, 90.0, 10.0)
+particle_size = st.number_input("Particle Size (µm)", 50.29, 100.0, 75.0)
+vacancy_conc = st.number_input("Vacancy Concentration", 1.00e-05, 1.00e-02, 1.00e-04)
+diffusion_coeff = st.number_input("Diffusion Coefficient (m²/s)", 1.00e-12, 1.00e-09, 1.00e-11)
 
 if st.button("Predict"):
 
