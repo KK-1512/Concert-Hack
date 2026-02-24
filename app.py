@@ -17,8 +17,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.markdown("---")
-
 st.image("Spinel.jpeg",
          caption="AI-Based Defect Detection in Spinel Oxide Ceramics",
          use_container_width=True)
