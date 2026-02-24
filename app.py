@@ -87,13 +87,6 @@ if st.button("Predict"):
     else:
         st.success(f"No Defect (Probability: {1-defect_prob:.2f})")
 
-st.markdown("## 👥 Team Members")
-
-st.markdown("""
-### Alphina Seles L  
-### Arjun M Rao  
-### Krishnakumar V
-""")
 st.markdown(
     """
     <div style='text-align: corner;'>
