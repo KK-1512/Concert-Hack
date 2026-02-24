@@ -9,7 +9,19 @@ classifier = joblib.load("classifier.pkl")
 st.title("SPS Spinel ML Prediction System")
 
 st.markdown("---")
+st.title("🏆 SPS Spinel ML Prediction System")
 
+st.info("""
+👥 **Team Name:** Material Mavericks  
+
+👨‍🔬 **Team Members:**  
+• Krishnakumar  
+• Member 2  
+• Member 3  
+• Member 4  
+""")
+
+st.markdown("---")
 st.write("Enter SPS Processing Parameters")
 
 # User Inputs
