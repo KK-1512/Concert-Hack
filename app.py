@@ -19,6 +19,10 @@ st.markdown(
 )
 st.markdown("---")
 
+st.image("Spinel.jpeg",
+         caption="AI-Based Defect Detection in Spinel Oxide Ceramics",
+         use_container_width=True)
+
 st.write("Enter SPS Processing Parameters")
 
 # User Inputs
