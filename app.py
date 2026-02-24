@@ -6,38 +6,42 @@ import joblib
 regressor = joblib.load("regressor.pkl")
 classifier = joblib.load("classifier.pkl")
 
-st.markdown(
-    """
-    <style>
-    .main-title {
-        text-align: center;
-        font-size: 60px;
-        font-weight: 900;
-        background: linear-gradient(90deg, #ff0000, #ff4d4d);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        letter-spacing: 2px;
-        margin-bottom: 5px;
-    }
-    .sub-title {
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        color: #ff1a1a;
-        margin-top: 0px;
-    }
-    </style>
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
 
-    <div class="main-title">
-        Glassy Tech
-    </div>
+<style>
+.glassy-title {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff0000, #ff4d4d, #ff1a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
 
-    <div class="sub-title">
-        SPS Spinel ML Prediction System
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+.glassy-subtitle {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff3333;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+</style>
+
+<div class="glassy-title">
+    Glassy Tech
+</div>
+
+<div class="glassy-subtitle">
+    SPS Spinel ML Prediction System
+</div>
+""", unsafe_allow_html=True)
 st.image("Spinel.jpeg",
          caption="AI-Based Defect Detection in Spinel Oxide Ceramics",
          use_container_width=True)
