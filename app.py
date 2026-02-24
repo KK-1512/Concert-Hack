@@ -9,19 +9,7 @@ classifier = joblib.load("classifier.pkl")
 st.title("SPS Spinel ML Prediction System")
 
 st.markdown("---")
-st.title("🏆 SPS Spinel ML Prediction System")
 
-st.info("""
-👥 **Team Name:** Material Mavericks  
-
-👨‍🔬 **Team Members:**  
-• Krishnakumar  
-• Member 2  
-• Member 3  
-• Member 4  
-""")
-
-st.markdown("---")
 st.write("Enter SPS Processing Parameters")
 
 # User Inputs
@@ -59,3 +47,14 @@ if st.button("Predict"):
         st.error(f"Defect Likely (Probability: {defect_prob:.2f})")
     else:
         st.success(f"No Defect (Probability: {1-defect_prob:.2f})")
+
+
+
+    st.markdown("""
+    **Team Name:** Glassy Tech  
+
+    **Team Members:**  
+    - Alphina Seles L
+    - Arjun M Rao
+    - Krishnakumar V
+    """)
