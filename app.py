@@ -111,7 +111,7 @@ st.markdown("""
 </style>
 
 <div class="team-box">
-    <div class="team-title">👥 Team Members</div>
+    <div class="team-title">Team Members</div>
     <div class="team-members">
         Alphina Seles L <br>
         Arjun M Rao <br>
